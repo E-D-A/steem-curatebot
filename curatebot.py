@@ -5,7 +5,6 @@ import time
 import logging
 import json
 from steem import Steem
-from steem.post import Post
 
 # *** Configure variables ***
 curators = ['SteemCurator1','SteemCurator2']
@@ -14,7 +13,7 @@ channel = discord.Object(id='ChannelID')
 bottoken = 'DiscordBotToken'
 
 # Setup steem RPC nodes
-my_nodes = ['https://api.steemit.com', 'https://steemd.steemitstage.com', 'https://rpc.buildteam.io', 'https://steemd.steemit.com']
+my_nodes = ['https://api.steemit.com', 'https://rpc.buildteam.io']
 steem = Steem(nodes=my_nodes)
 
 # Discord bot description used by the 'help' command
